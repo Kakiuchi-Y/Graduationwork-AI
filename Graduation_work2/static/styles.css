@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+}
+
+#main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    height: 100vh;
+}
+
+#camera-container {
+    width: 60%; /* 左側を60%に設定 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#video {
+    width: 85%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#result-and-prediction {
+    width: 40%; /* 右側を40%に設定 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#result {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex-grow: 1; /* 判定結果が上部に配置されるように調整 */
+}
+
+#prediction-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#predictForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#predictForm input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#predictForm button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#predictForm button:hover {
+    background-color: #45a049;
+}
+
+#prediction-result {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4CAF50;
+}
